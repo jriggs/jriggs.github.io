@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,65 +8,143 @@
     <title>Joe Riggs - Software Engineer - Cincinnati, OH</title>
     <style>
         /* html reset */
-        html, body, div, span, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        abbr, address, cite, code,
-        del, dfn, em, img, ins, kbd, q, samp,
-        small, strong, sub, sup, var,
-        b, i,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, figcaption, figure,
-        footer, header, hgroup, menu, nav, section, summary,
-        time, mark, audio, video {
-            margin:0;
-            padding:0;
-            border:0;
-            outline:0;
-            font-size:100%;
-            vertical-align:baseline;
-            background:transparent;
+        html,
+        body,
+        div,
+        span,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        abbr,
+        address,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        samp,
+        small,
+        strong,
+        sub,
+        sup,
+        var,
+        b,
+        i,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            outline: 0;
+            font-size: 100%;
+            vertical-align: baseline;
+            background: transparent;
         }
 
         body {
-            line-height:1;
+            line-height: 1;
         }
 
-        article,aside,details,figcaption,figure,
-        footer,header,hgroup,menu,nav,section {
-            display:block;
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
+            display: block;
         }
 
         /*End Reset, begin style*/
 
-        body{
-           font-family: 'Calibre', 'Arial Narrow', Arial, sans-serif; 
-           font-size: 1em;
+        body {
+            font-family: 'Calibre', 'Arial Narrow', Arial, sans-serif;
+            font-size: 1em;
         }
 
-        #container{
+        #container {
             max-width: 960px;
             margin: auto;
             text-align: justify;
         }
-        header{
+
+        header,
+        .technical-proficiencies {
             display: flex;
         }
-        .center{
+
+        .center {
             flex: auto;
         }
-        .hidden{
-            color:white;
+
+        .technical-proficiencies :first-child {
+            flex: 1 1 0;
+        }
+
+        .technical-proficiencies :last-child {
+            flex: 2 1 0;
+        }
+
+        .hidden {
+            color: white;
             font-size: .01em;
             display: block;
         }
-
     </style>
 </head>
+
 <body>
-   <div id="container">
-       <header>
+    <div id="container">
+        <header>
             <div>
                 <h1>Joe Riggs</h1>
                 <h2>Software Engineer</h2>
@@ -75,16 +154,83 @@
                 <p>Github &bull; LinkedIn &bull; Email </p>
                 <p>Cincinnati, OH</p>
             </div>
-       </header>
-       <p>
-            <span class = "hidden">Summary</span>
-            Tech-savvy and highly analytical professional with extensive experience in software development. 
-            Expert in devising and implementing technical solutions in line with client and business requirements. 
-            Adept at configuring and updating software/applications. Able to assess software development methodology
-            and identify opportunities to increase engineering productivity. Excel at coordinating with new technical teams 
-            and providing recommendations for software enhancement. Instrumental in minimizing process time, modernizing websites, 
-            and supporting software integration.
-       </p>
-   </div> 
+        </header>
+        <main>
+            <p>
+                <span class="hidden">Summary</span>
+                Tech-savvy and highly analytical professional with extensive experience in software development.
+                Expert in devising and implementing technical solutions in line with client and business requirements.
+                Adept at configuring and updating software/applications. Able to assess software development methodology
+                and identify opportunities to increase engineering productivity. Excel at coordinating with new
+                technical teams
+                and providing recommendations for software enhancement. Instrumental in minimizing process time,
+                modernizing websites,
+                and supporting software integration.
+            </p>
+            <h2>Technical Proficiencies</h2>
+            <section class="technical-proficiencies">   
+                <div>
+                    Platforms:
+                </div>
+                <div>
+                    AWS, Azure, Firebase, Netlify
+                </div>
+            </section>
+            <section class="technical-proficiencies">   
+                <div>
+                    Databases:
+                </div>
+                <div>
+                    Postgres, MySQL, MSSQL (T-SQL, Stored Procedures), MongoDB 
+                </div>
+            </section>
+            <section class="technical-proficiencies">   
+                <div>
+                    Languages:
+                </div>
+                <div>
+                    C#/.NET Core, JAVA, PHP, JavaScript - Node/Vue.js/Angular, Python
+                </div>
+            </section>
+            <section class="technical-proficiencies">   
+                <div>
+                    Methodologies:
+                </div>
+                <div>
+                    Agile/Scrum, DevOps, Systems Analysis, SDLC
+                </div>
+            </section>
+            <h2>Career Experience</h2>
+            <header>
+                <div>
+                    <h3>LISNR Inc., Cincinnati, OH</h3>
+                    <h4>Implementation Engineer</h4>
+                </div>
+                <div class="center"></div>
+                <div>
+                    <p>Jul 2019 – Jan 2020</p>
+                </div>
+            </header>
+            <p>Supervised execution and operation support of company’s SDK and platform. Coordinated with customers
+                 to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
+                application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and 
+                addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps 
+                with trends and customer requests through staff counseling. Created and presented demos of company 
+                products in a 'real world' scenario proving ground.</p>
+            <h5>Key Accomplishments</h5>
+            <ul>
+                <li>
+                    Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating 
+                    customers before checkout.
+                </li>
+                <li>
+                    Partnered with a credit company’s innovation lab to create an MVP for touchless payments
+                </li>
+            </ul>
+            
+
+        </main>
+    </div>
 </body>
+
 </html>
