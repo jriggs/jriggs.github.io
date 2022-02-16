@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,75 +7,8 @@
     <title>Joe Riggs - Software Engineer - Cincinnati, OH</title>
     <style>
         /* html reset */
-        html,
-        body,
-        div,
-        span,
-        object,
-        iframe,
-        h1,
-        h2,
-        h3,
-        h4,
-        h5,
-        h6,
-        p,
-        blockquote,
-        pre,
-        abbr,
-        address,
-        cite,
-        code,
-        del,
-        dfn,
-        em,
-        img,
-        ins,
-        kbd,
-        q,
-        samp,
-        small,
-        strong,
-        sub,
-        sup,
-        var,
-        b,
-        i,
-        dl,
-        dt,
-        dd,
-        ol,
-        ul,
-        li,
-        fieldset,
-        form,
-        label,
-        legend,
-        table,
-        caption,
-        tbody,
-        tfoot,
-        thead,
-        tr,
-        th,
-        td,
-        article,
-        aside,
-        canvas,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section,
-        summary,
-        time,
-        mark,
-        audio,
-        video {
+        html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,fieldset,
+        form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,footer,header,menu,nav,section {
             margin: 0;
             padding: 0;
             border: 0;
@@ -90,20 +22,9 @@
             line-height: 1;
         }
 
-        article,
-        aside,
-        details,
-        figcaption,
-        figure,
-        footer,
-        header,
-        hgroup,
-        menu,
-        nav,
-        section {
+        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
             display: block;
         }
-
         /*End Reset, begin style*/
 
         body {
@@ -112,13 +33,18 @@
         }
 
         #container {
-            max-width: 960px;
+            max-width: 900px;
             margin: auto;
             text-align: justify;
+            padding: 0 20px;
+        }
+
+        header > div > p{
+            text-align: right;
         }
 
         header,
-        .technical-proficiencies {
+        .technical-proficiencies>section {
             display: flex;
         }
 
@@ -126,11 +52,11 @@
             flex: auto;
         }
 
-        .technical-proficiencies :first-child {
-            flex: 1 1 0;
+        .technical-proficiencies>section :first-child {
+            flex: .5 1 0;
         }
 
-        .technical-proficiencies :last-child {
+        .technical-proficiencies>section :last-child {
             flex: 2 1 0;
         }
 
@@ -151,7 +77,7 @@
             </div>
             <div class="center"></div>
             <div>
-                <p>Github &bull; LinkedIn &bull; Email </p>
+                <p>Github &bull; LinkedIn &bull; <a href="mailto:josephariggs@gmail.com"> Email </a></p>
                 <p>Cincinnati, OH</p>
             </div>
         </header>
@@ -167,67 +93,161 @@
                 modernizing websites,
                 and supporting software integration.
             </p>
+
             <h2>Technical Proficiencies</h2>
-            <section class="technical-proficiencies">   
-                <div>
-                    Platforms:
-                </div>
-                <div>
-                    AWS, Azure, Firebase, Netlify
-                </div>
-            </section>
-            <section class="technical-proficiencies">   
-                <div>
-                    Databases:
-                </div>
-                <div>
-                    Postgres, MySQL, MSSQL (T-SQL, Stored Procedures), MongoDB 
-                </div>
-            </section>
-            <section class="technical-proficiencies">   
-                <div>
-                    Languages:
-                </div>
-                <div>
-                    C#/.NET Core, JAVA, PHP, JavaScript - Node/Vue.js/Angular, Python
-                </div>
-            </section>
-            <section class="technical-proficiencies">   
-                <div>
-                    Methodologies:
-                </div>
-                <div>
-                    Agile/Scrum, DevOps, Systems Analysis, SDLC
-                </div>
-            </section>
+            <span class="technical-proficiencies">
+                <section>
+                    <div>Platforms:</div>
+                    <div>AWS, Azure, Firebase, Netlify</div>
+                </section>
+                <section>
+                    <div>Databases:</div>
+                    <div>Postgres, MySQL, MSSQL (T-SQL, Stored Procedures), MongoDB</div>
+                </section>
+                <section>
+                    <div>Languages:</div>
+                    <div>C#/.NET Core, JAVA, PHP, JavaScript - Node/Vue.js/Angular, Python</div>
+                </section>
+                <section>
+                    <div>Methodologies:</div>
+                    <div>Agile/Scrum, DevOps, Systems Analysis, SDLC</div>
+                </section>
+            </span>
+
             <h2>Career Experience</h2>
-            <header>
-                <div>
-                    <h3>LISNR Inc., Cincinnati, OH</h3>
-                    <h4>Implementation Engineer</h4>
-                </div>
-                <div class="center"></div>
-                <div>
-                    <p>Jul 2019 – Jan 2020</p>
-                </div>
-            </header>
-            <p>Supervised execution and operation support of company’s SDK and platform. Coordinated with customers
-                 to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
-                application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and 
-                addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps 
-                with trends and customer requests through staff counseling. Created and presented demos of company 
-                products in a 'real world' scenario proving ground.</p>
-            <h5>Key Accomplishments</h5>
-            <ul>
-                <li>
-                    Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating 
-                    customers before checkout.
-                </li>
-                <li>
-                    Partnered with a credit company’s innovation lab to create an MVP for touchless payments
-                </li>
-            </ul>
-            
+            <span class="career-experience">
+                <header>
+                    <div>
+                        <h3>LISNR Inc., Cincinnati, OH</h3>
+                        <h4>Implementation Engineer</h4>
+                    </div>
+                    <div class="center"></div>
+                    <div>
+                        <p>Jul 2019 - Jan 2020</p>
+                    </div>
+                </header>
+                <p>Supervised execution and operation support of company&#39;s SDK and platform. Coordinated with
+                    customers
+                    to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
+                    application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and
+                    addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps
+                    with trends and customer requests through staff counseling. Created and presented demos of company
+                    products in a 'real world' scenario proving ground.</p>
+                <h5>Key Accomplishments</h5>
+                <ul>
+                    <li>
+                        Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating
+                        customers before checkout.
+                    </li>
+                    <li>
+                        Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
+                    </li>
+                </ul>
+            </span>
+
+            <span class="job">
+                <header>
+                    <div>
+                        <h3>LISNR Inc., Cincinnati, OH</h3>
+                        <h4>Implementation Engineer</h4>
+                    </div>
+                    <div class="center"></div>
+                    <div>
+                        <p>Jul 2019 - Jan 2020</p>
+                    </div>
+                </header>
+                <p>Supervised execution and operation support of company&#39;s SDK and platform. Coordinated with
+                    customers
+                    to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
+                    application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and
+                    addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps
+                    with trends and customer requests through staff counseling. Created and presented demos of company
+                    products in a 'real world' scenario proving ground.</p>
+                <h5>Key Accomplishments</h5>
+                <ul>
+                    <li>
+                        Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating
+                        customers before checkout.
+                    </li>
+                    <li>
+                        Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
+                    </li>
+                </ul>
+            </span>
+
+            <span class="job">
+                <header>
+                    <div>
+                        <h3>LISNR Inc., Cincinnati, OH</h3>
+                        <h4>Implementation Engineer</h4>
+                    </div>
+                    <div class="center"></div>
+                    <div>
+                        <p>Jul 2019 - Jan 2020</p>
+                    </div>
+                </header>
+                <p>Supervised execution and operation support of company&#39;s SDK and platform. Coordinated with
+                    customers
+                    to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
+                    application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and
+                    addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps
+                    with trends and customer requests through staff counseling. Created and presented demos of company
+                    products in a 'real world' scenario proving ground.</p>
+                <h5>Key Accomplishments</h5>
+                <ul>
+                    <li>
+                        Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating
+                        customers before checkout.
+                    </li>
+                    <li>
+                        Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
+                    </li>
+                </ul>
+            </span>
+
+            <span class="job">
+                <header>
+                    <div>
+                        <h3>LISNR Inc., Cincinnati, OH</h3>
+                        <h4>Implementation Engineer</h4>
+                    </div>
+                    <div class="center"></div>
+                    <div>
+                        <p>Jul 2019 - Jan 2020</p>
+                    </div>
+                </header>
+                <p>Supervised execution and operation support of company&#39;s SDK and platform. Coordinated with
+                    customers
+                    to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
+                    application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and
+                    addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps
+                    with trends and customer requests through staff counseling. Created and presented demos of company
+                    products in a 'real world' scenario proving ground.</p>
+                <h5>Key Accomplishments</h5>
+                <ul>
+                    <li>
+                        Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating
+                        customers before checkout.
+                    </li>
+                    <li>
+                        Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
+                    </li>
+                </ul>
+            </span>
+
+            <h2>Additional Experience</h2>
+            <span class="additional-experience">
+                <span>Senior Consulatant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH
+                <span>Senior Consulatant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH
+                <span>Senior Consulatant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH
+                <span>Senior Consulatant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH
+            </span>
+
+            <h2>Education</h2>
+            <span class="education">
+                Bachelor of Science in Information Systems, Minor Business Administration
+                Northern Kentucky University, Highland Heights, KY
+            </span>
 
         </main>
     </div>
