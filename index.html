@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joe Riggs - Software Engineer - Cincinnati, OH</title>
+    <title>Joe Riggs &bull; Software Engineer &bull; Cincinnati, OH</title>
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
     <style>
         /* html reset */
         html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,fieldset,
@@ -25,38 +26,84 @@
         article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
             display: block;
         }
-        /*End Reset, begin style*/
+        /*End Reset, begin custom style*/
 
         body {
-            font-family: 'Calibre', 'Arial Narrow', Arial, sans-serif;
-            font-size: 1em;
+            font-family: Arial, sans-serif;
+            font-size: .9em;    
         }
 
         #container {
-            max-width: 900px;
+            max-width: 880px;
             margin: auto;
             text-align: justify;
-            padding: 0 20px;
+            padding: 20px;
         }
 
-        header > div > p{
+        h1 {
+            font-size:2.5em
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight:700;
+            padding: 1.2rem 0;
+        }
+
+        h4 {
+            font-weight: 300;
+        }
+
+        h5 {
+            font-weight: 500;
+            text-decoration: underline;
+        }
+
+        h2,
+        h3,
+        h4,
+        .career-experience > header > div > div:last-child,
+        #technical-proficiencies>section :first-child ,
+        #jobs  header  >div > p,
+        #additional-experience > p > span,
+        a,
+        a:visited {
+            color: #0F5581;
+        }
+
+
+
+
+        div > header > div {
+           padding: 1.2em 0 0 0;
+        }
+
+        p, li {
+            line-height: 1.4em;
+        }
+
+        header > div > p {
             text-align: right;
         }
 
         header,
-        .technical-proficiencies>section {
+        #technical-proficiencies>section {
             display: flex;
+        }
+
+        #technical-proficiencies>section {
+            padding: .3em 0;
         }
 
         .center {
             flex: auto;
         }
 
-        .technical-proficiencies>section :first-child {
+        #technical-proficiencies>section :first-child {
             flex: .5 1 0;
         }
 
-        .technical-proficiencies>section :last-child {
+        #technical-proficiencies>section :last-child {
             flex: 2 1 0;
         }
 
@@ -65,6 +112,29 @@
             font-size: .01em;
             display: block;
         }
+       
+        header > div > h2 {
+            padding: 0;
+        }
+
+        #jobs  header > div > p,
+        #additional-experience >p > span, 
+        #technical-proficiencies > section :first-child {
+            font-weight: 700;
+        }
+
+        #jobs > p {
+            padding: .7rem 0;
+        }
+
+        #jobs > ul:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            margin: .6em 0 1.2em 3em;
+        }
+
     </style>
 </head>
 
@@ -77,7 +147,12 @@
             </div>
             <div class="center"></div>
             <div>
-                <p>Github &bull; LinkedIn &bull; <a href="mailto:josephariggs@gmail.com"> Email </a></p>
+                <p>
+                    <a href="https://github.com/jriggs" target="_blank" rel="noopener noreferrer">Github</a>
+                     &bull; 
+                     <a href="https://www.linkedin.com/in/joeriggs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+                    &bull; 
+                    <a href="mailto:josephariggs@gmail.com" target="_blank" rel="noopener noreferrer"> Email </a></p>
                 <p>Cincinnati, OH</p>
             </div>
         </header>
@@ -95,7 +170,7 @@
             </p>
 
             <h2>Technical Proficiencies</h2>
-            <span class="technical-proficiencies">
+            <span id="technical-proficiencies">
                 <section>
                     <div>Platforms:</div>
                     <div>AWS, Azure, Firebase, Netlify</div>
@@ -115,67 +190,34 @@
             </span>
 
             <h2>Career Experience</h2>
-            <span class="career-experience">
-                <header>
-                    <div>
-                        <h3>LISNR Inc., Cincinnati, OH</h3>
-                        <h4>Implementation Engineer</h4>
-                    </div>
-                    <div class="center"></div>
-                    <div>
-                        <p>Jul 2019 - Jan 2020</p>
-                    </div>
-                </header>
-                <p>Supervised execution and operation support of company&#39;s SDK and platform. Coordinated with
-                    customers
-                    to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
-                    application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and
-                    addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps
-                    with trends and customer requests through staff counseling. Created and presented demos of company
-                    products in a 'real world' scenario proving ground.</p>
-                <h5>Key Accomplishments</h5>
-                <ul>
-                    <li>
-                        Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating
-                        customers before checkout.
-                    </li>
-                    <li>
-                        Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
-                    </li>
-                </ul>
-            </span>
+            <span id="jobs">
 
-            <span class="job">
                 <header>
                     <div>
-                        <h3>LISNR Inc., Cincinnati, OH</h3>
-                        <h4>Implementation Engineer</h4>
+                        <h3>Tech Elevator, Cincinnati, OH</h3>
+                        <h4>Instructor</h4>
                     </div>
                     <div class="center"></div>
                     <div>
-                        <p>Jul 2019 - Jan 2020</p>
+                        <p>Jan 2020 - present</p>
                     </div>
                 </header>
-                <p>Supervised execution and operation support of company&#39;s SDK and platform. Coordinated with
-                    customers
-                    to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
-                    application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and
-                    addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps
-                    with trends and customer requests through staff counseling. Created and presented demos of company
-                    products in a 'real world' scenario proving ground.</p>
+                <p>Deliver personalized instruction on full-stack software development with Java and C#.NET. 
+                Offer one-on-one support to students and contribute to career guidance sessions. Mentor and technically 
+                upskill students.</p>
                 <h5>Key Accomplishments</h5>
                 <ul>
                     <li>
-                        Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating
-                        customers before checkout.
+                        Coached and enabled 100+ students to transition into technology.
                     </li>
                     <li>
-                        Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
+                        Played a lead role in the development of curriculum in line with national curriculum strategy.
+                    </li>
+                    <li>
+                        Created ‘Learn To Code Resources’ and led workshops on technical topics
                     </li>
                 </ul>
-            </span>
 
-            <span class="job">
                 <header>
                     <div>
                         <h3>LISNR Inc., Cincinnati, OH</h3>
@@ -203,50 +245,70 @@
                         Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
                     </li>
                 </ul>
-            </span>
 
-            <span class="job">
                 <header>
                     <div>
-                        <h3>LISNR Inc., Cincinnati, OH</h3>
-                        <h4>Implementation Engineer</h4>
+                        <h3>Health Carousel, Cincinnati, OH</h3>
+                        <h4>Enterprise CRM Developer</h4>
                     </div>
                     <div class="center"></div>
                     <div>
-                        <p>Jul 2019 - Jan 2020</p>
+                        <p>Feb 2018 - Jul 2019</p>
                     </div>
                 </header>
-                <p>Supervised execution and operation support of company&#39;s SDK and platform. Coordinated with
-                    customers
-                    to accomplish business outcomes and decrease roadblocks. Developed and prototyped proof-of-concept
-                    application for iOS, android, raspberry Pi and desktop platforms. Identified customer needs and
-                    addressed technical questions by attending presale meetings. Ensured alignment of product roadmaps
-                    with trends and customer requests through staff counseling. Created and presented demos of company
-                    products in a 'real world' scenario proving ground.</p>
+                <p>Monitored workflows, coding, and deployment of software solutions for recruiting platforms. 
+                    Designed new applications, web services, modules, and customer plugins for CRM. 
+                    Carried out deliverable implementation on two-week sprint schedule. Optimized slow-performing 
+                    workflows by implementing custom applications. Created testing plans, release management, and updated automated deploys. </p>
                 <h5>Key Accomplishments</h5>
                 <ul>
                     <li>
-                        Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating
-                        customers before checkout.
+                        Reduced process time by 1-2 hours per person by streamlining registration process.
                     </li>
                     <li>
-                        Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
+                        Minimized bugs and enhanced flexible deployments by executing continuous integration process for applications.
                     </li>
                 </ul>
+
+                <header>
+                    <div>
+                        <h3>Public Library of Cincinnati, OH</h3>
+                        <h4>Team Lead/Systems Developer</h4>
+                    </div>
+                    <div class="center"></div>
+                    <div>
+                        <p>Feb 2016 – Feb 2018</p>
+                    </div>
+                </header>
+                <p>Oversaw daily operations and support for all software platforms and websites. Designed internal web tools
+                    for intranet and extranet users. Assessed and resolved technical issues in coordination with vendors. 
+                    Created ETL tools for reporting and analytics. Supervised duties of junior team and trained on technical
+                     product development.</p>
+                <h5>Key Accomplishments</h5>
+                <ul>
+                    <li>
+                        Developed interactive checkout kiosk providing self-service capability to patrons.
+                    </li>
+                    <li>
+                        Decreased page load times by 1-2 seconds and optimized website used by 500K users/month.
+                    </li>
+                </ul>
+
             </span>
 
             <h2>Additional Experience</h2>
-            <span class="additional-experience">
-                <span>Senior Consulatant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH
-                <span>Senior Consulatant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH
-                <span>Senior Consulatant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH
-                <span>Senior Consulatant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH
+            <span id="additional-experience">
+                <p><span>Senior Consultant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH</p>
+                <p><span>Senior Developer/Product Owner,</span> (Mar 2012 – May 2015) Knowledge Works Foundation, Cincinnati, OH</p>
+                <p><span>Application Developer,</span>(Apr 2007 - Feb 2012) Beltronics / Escort Inc., Cincinnati, OH</p>
+                <p><span>Instructor,</span> for Amazon's Tech Training Class, Hebron, KY</p>
+                <p><span>Tutor,</span> Cincinnati Public Schools</p>
             </span>
 
             <h2>Education</h2>
-            <span class="education">
-                Bachelor of Science in Information Systems, Minor Business Administration
-                Northern Kentucky University, Highland Heights, KY
+            <span id="education">
+                <p>Bachelor of Science in Information Systems, Minor Business Administration</p>
+                <p>Northern Kentucky University, Highland Heights, KY</p>
             </span>
 
         </main>
