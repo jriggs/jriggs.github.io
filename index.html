@@ -1,278 +1,390 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joe Riggs &bull; Software Engineer &bull; Cincinnati, OH</title>
-    <link rel="icon" type="image/x-icon" href="favicon.ico">
-    <style>
-        /* html reset */
-        html,body,div,span,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,ol,ul,li,fieldset,
-        form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,footer,header,menu,nav,section {
-            margin: 0;
-            padding: 0;
-            border: 0;
-            outline: 0;
-            font-size: 100%;
-            vertical-align: baseline;
-            background: transparent;
-        }
-
-        body {
-            line-height: 1;
-        }
-
-        article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section {
-            display: block;
-        }
-        /*End Reset, begin custom style*/
-
-        body {
-            font-family: Arial, sans-serif;
-            font-size: .9em;    
-        }
-
-        #container {
-            max-width: 880px;
-            margin: auto;
-            text-align: justify;
-            padding: 20px;
-        }
-
-        h1 {
-            font-size:2.1em
-        }
-
-        h2 {
-            font-size: 1.2em;
-            font-weight:700;
-            padding: .8em 0;
-        }
-
-        h4 {
-            font-weight: 300;
-        }
-
-        h5 {
-            font-weight: 500;
-            text-decoration: underline;
-        }
-
-        h1,
-        h2,
-        h3,
-        h4,
-        .career-experience > header > div > div:last-child,
-        #technical-proficiencies>section :first-child ,
-        #jobs  header  >div > p,
-        #additional-experience > p > span,
-        a,
-        a:visited {
-            color: #0F5581;
-        }
-
-        div > header > div {
-           padding: 1.2em 0 0 0;
-        }
-
-        p, li {
-            line-height: 1.4em;
-        }
-
-        header > div > p {
-            text-align: right;
-        }
-
-        header,
-        #technical-proficiencies>section {
-            display: flex;
-        }
-
-        #technical-proficiencies>section {
-            padding: .3em 0;
-        }
-
-        .center {
-            flex: auto;
-        }
-
-        #technical-proficiencies>section :first-child {
-            flex: .5 1 0;
-        }
-
-        #technical-proficiencies>section :last-child {
-            flex: 2 1 0;
-        }
-
-        .hidden {
-            color: white;
-            font-size: .01em;
-            display: block;
-            height: 0px;
-        }
-       
-        header > div > h2 {
-            padding: 0;
-        }
-
-        #jobs  header > div > p,
-        #additional-experience >p > span, 
-        #technical-proficiencies > section :first-child {
-            font-weight: 700;
-        }
-
-        #jobs > ul:last-child {
-            margin-bottom: 0;
-        }
-
-        ul {
-            margin: .6em 0 1.2em 3em;
-        }
-
-    </style>
-</head>
-
-<body>
-    <div id="container">
-        <header>
-            <div>
-                <h1>Joe Riggs</h1>
-            </div>
-            <div class="center"></div>
-            <div>
-                <p>
-                    <a href="https://github.com/jriggs" target="_blank" rel="noopener noreferrer">Github</a>
-                     &bull; 
-                     <a href="https://www.linkedin.com/in/joeriggs/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                    &bull; 
-                    <a href="mailto:josephariggs@gmail.com" target="_blank" rel="noopener noreferrer"> Email </a></p>
-                <p>Cincinnati, OH</p>
-            </div>
-        </header>
-        <main>
-            <p>
-                <span class="hidden">Summary</span>
-                Technologist with a proven track record delivering modern software solutions. Team player adept at facilitating groups and spanning multiple roles across the SDLC. Passion for optimization. Public speaker, mentor, advocate, music aficionado.
-            </p>
-
-            <h2>Technical Proficiencies</h2>
-            <span id="technical-proficiencies">
-                <section>
-                    <div>Platforms:</div>
-                    <div>AWS, Azure, Firebase, Netlify</div>
-                </section>
-                <section>
-                    <div>Languages:</div>
-                    <div>C#/.NET Core, JAVA, PHP, Python, JavaScript - Node/Vue.js/Angular</div>
-                </section>
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>Joe Riggs</title>
+      <link rel="icon" type="image/x-icon" href="/web/20240502073210im_/https://www.joeriggs.com/favicon.ico">
+      <style>
+         * {
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+         }
+         body {
+         font-family: "Calibri", "Segoe UI", "SegoeUI", "Helvetica Neue",
+         Helvetica, Arial, sans-serif;
+         font-size: 1em;
+         line-height: 1.2;
+         -webkit-font-smoothing: antialiased;
+         text-rendering: optimizeLegibility;
+         max-width: 51em;
+         margin: auto;
+         padding: 1em;
+         }
+         .dark {
+         background-color: #252222;
+         color: #fefefe;
+         }
+         main {
+         margin-top: 1em;
+         }
+         section {
+         margin-bottom: 1.4em;
+         }
+         article {
+         margin-bottom: 1.4em;
+         }
+         header > section,
+         article > div {
+         display: flex;
+         justify-content: space-between;
+         align-items: center;
+         margin-bottom: 0.2em;
+         }
+         header > section > span > div {
+         text-align: end;
+         }
+         header > p{
+         margin-top: 1em;
+         }
+         h1 {
+         font-size: 3rem;
+         }
+         h2 {
+         width: 100%;
+         color: #1155cc;
+         border-bottom: 0.1em solid #1155cc;
+         margin-bottom: 0.4em;
+         }
+         ul {
+         padding-left: 2em;
+         }
+         li > span {
+         display: inline-block;
+         width: 7rem;
+         font-weight: 700;
+         }
+         div > span:nth-child(2) {
+         align-self: flex-start;
+         text-align: end;
+         }
+         div > span > div {
+         font-weight: 700;
+         }
+         div > span > div > div {
+         font-weight: 400;
+         font-style: italic;
+         }
+         li > div {
+         display: inline;
+         font-weight: 700;
+         }
+         .switch {
+         height: 100px;
+         position: fixed;
+         right: 15px;
+         top: 21px;
+         }
+         .theme-switch {
+         display: inline-block;
+         height: 34px;
+         position: relative;
+         width: 60px;
+         }
+         .theme-switch input {
+         display: none;
+         }
+         .slider {
+         background-color: #ccc;
+         bottom: 0;
+         cursor: pointer;
+         left: 0;
+         position: absolute;
+         right: 0;
+         top: 0;
+         transition: 0.4s;
+         }
+         .slider:before {
+         background-color: #fff;
+         bottom: 4px;
+         content: "";
+         height: 26px;
+         left: 4px;
+         position: absolute;
+         transition: 0.4s;
+         width: 26px;
+         }
+         input:checked + .slider {
+         background-color: #2b2b2b;
+         }
+         input:checked + .slider:before {
+         transform: translateX(26px);
+         }
+         .slider.round {
+         border-radius: 34px;
+         }
+         .slider.round:before {
+         border-radius: 50%;
+         }
+      </style>
+   </head>
+   <body>
+      <header>
+         <section>
+            <span>
+               <h1>Joe Riggs</h1>
             </span>
-
-            <h2>Career Experience</h2>
-            <span id="jobs">
-
-                <header>
-                    <div>
-                        <h3>Tech Elevator, Cincinnati, OH</h3>
-                        <h4>Instructor</h4>
-                    </div>
-                    <div class="center"></div>
-                    <div>
-                        <p>Jan 2020 - present</p>
-                    </div>
-                </header>
-                <p>Deliver personalized instruction on full-stack software development with Java and C#.NET. 
-                Offer one-on-one support to students and contribute to career guidance sessions. Mentor and technically 
-                upskill students.</p>
-                <ul>
-                    <li>
-                        Coached and enabled 100+ students to transition into technology.
-                    </li>
-                    <li>
-                        Played a lead role in the development of curriculum in line with national curriculum strategy.
-                    </li>
-                </ul>
-
-                <header>
-                    <div>
-                        <h3>LISNR Inc., Cincinnati, OH</h3>
-                        <h4>Implementation Engineer</h4>
-                    </div>
-                    <div class="center"></div>
-                    <div>
-                        <p>Jul 2019 - Jan 2020</p>
-                    </div>
-                </header>
-                <p>Supervised execution and operation support of SDK and platform. Coordinated with customers to accomplish business outcomes and remove roadblocks. Developed and prototyped proof-of-concepts applications for iOS, android, raspberry Pi and desktop platforms.</p>
-                <ul>
-                    <li>
-                        Minimized checkout time by 1-2 minutes per customer by optimizing workflow and authenticating
-                        customers before checkout.
-                    </li>
-                    <li>
-                        Partnered with a credit company&#39;s innovation lab to create an MVP for touchless payments
-                    </li>
-                </ul>
-
-                <header>
-                    <div>
-                        <h3>Health Carousel, Cincinnati, OH</h3>
-                        <h4>Enterprise CRM Developer</h4>
-                    </div>
-                    <div class="center"></div>
-                    <div>
-                        <p>Feb 2018 - Jul 2019</p>
-                    </div>
-                </header>
-                <p>Monitored workflows, coding, and deployment of software solutions for recruiting platforms. Designed new applications, web services, modules, and customer plugins.</p>
-                <ul>
-                    <li>
-                        Reduced process time by 1-2 hours per person by streamlining registration process.
-                    </li>
-                    <li>
-                        Minimized bugs and enhanced flexible deployments by executing continuous integration process for applications.
-                    </li>
-                </ul>
-
-                <header>
-                    <div>
-                        <h3>Public Library of Cincinnati, OH</h3>
-                        <h4>Team Lead/Systems Developer</h4>
-                    </div>
-                    <div class="center"></div>
-                    <div>
-                        <p>Feb 2016 – Feb 2018</p>
-                    </div>
-                </header>
-                <p>Designed internal web tools for intranet and extranet users. Assessed and resolved technical issues in coordination with vendors. Created ETL tools for reporting and analytics. Supervised duties of junior team and trained on technical product development.</p>
-                <ul>
-                    <li>
-                        Developed interactive checkout kiosk providing self-service capability to patrons.
-                    </li>
-                    <li>
-                        Decreased page load times by 1-2 seconds and optimized website used by 500K users/month.
-                    </li>
-                </ul>
-
+            <span>
+               <div class="switch">
+                  <label class="theme-switch" for="checkbox">
+                     <input type="checkbox" id="checkbox"/>
+                     <div class="slider round"></div>
+                  </label>
+               </div>
             </span>
-
-            <h2>Additional Experience</h2>
-            <span id="additional-experience">
-                <p><span>Senior Consultant,</span> (Jun 2015 - Jan 2016) Convergys - Consultant via CBTS, Cincinnati, OH</p>
-                <p><span>Senior Developer/Product Owner,</span> (Mar 2012 – May 2015) Knowledge Works Foundation, Cincinnati, OH</p>
-                <p><span>Application Developer,</span>(Apr 2007 - Feb 2012) Beltronics / Escort Inc., Cincinnati, OH</p>
-                <p><span>Instructor,</span> for Amazon's Tech Training Class, Hebron, KY</p>
-                <p><span>Tutor,</span> Cincinnati Public Schools</p>
+            <span>
+               <div>Cincinnati, OH</div>
+               <div>linkedin.com/in/joeriggs</div>
+               <div>joseph.a.riggs@gmail.com</div>
             </span>
-
-            <h2>Education</h2>
-            <span id="education">
-                <p>Bachelor of Science in Information Systems, Minor Business Administration</p>
-                <p>Northern Kentucky University, Highland Heights, KY</p>
-            </span>
-
-        </main>
-    </div>
-</body>
-
+         </section>
+         <p>
+            Full-stack software engineer with 14+ years of experience, interested in
+            building and shipping efficient, scalable systems.
+         </p>
+      </header>
+      <main>
+         <section>
+            <h2>Skills</h2>
+            <ul>
+               <li>
+                  <span>Languages:</span>C# .NET, Java, javascript/typescript, python, HTML &amp; CSS
+               </li>
+               <li>
+                  <span>Technologies:</span>AWS, Azure, Terraform, Docker, MSSQL Server, Cosmos DB, REST APIs
+               </li>
+            </ul>
+         </section>
+         <section>
+            <h2>Work Experience</h2>
+            <article>
+               <div>
+                  <span>
+                     <div>
+                        Senior Software Engineer
+                        <div>Renewable Energy Systems</div>
+                     </div>
+                  </span>
+                  <span>
+                     <div>January 2022-Present</div>
+                     London, UK (Remote)
+                  </span>
+               </div>
+               <p>
+                  Developed distributed applications for monitoring and reporting on time series data with C#, python and React
+               </p>
+               <ul>
+                  <li>
+                     Converted 200GB document database to blob storage, decreasing
+                     annual costs 95% while scaling and adding backups
+                  </li>
+                  <li>
+                     Leveraged Github Actions, Terraform and Azure to create a CI
+                     pipeline with automated builds, test coverage metrics, and
+                     deployments, tripling release cadence
+                  </li>
+                  <li>
+                     Designed and implemented a new data model for time series data,
+                     reducing query times by 90%
+                  </li>
+                  <li>
+                     Created documentation using Github Pages, sphinx, mermaid and
+                     mkdocs, increasing team productivity and halving onboarding time
+                  </li>
+               </ul>
+            </article>
+            <article>
+               <div>
+                  <span>
+                     <div>
+                        Software Instructor
+                        <div>Tech Elevator</div>
+                     </div>
+                  </span>
+                  <span>
+                     <div>January 2020-December 2022</div>
+                     Cincinnati, OH (hybrid)
+                  </span>
+               </div>
+               <p>
+                  Delivered personalized in-person and remote instruction of
+                  full-stack software development for Java, C#.NET, MSSQL Server, REST
+                  API's, HTML/CSS and Vue.js
+               </p>
+               <ul>
+                  <li>
+                     Mentored over 150 students, 94% of whom were placed in software
+                     development roles within 6 months of graduation
+                  </li>
+                  <li>
+                     Developed and delivered curriculum, including 500+ hours of
+                     instruction, 100+ hours of projects, and 50+ hours of career
+                     development
+                  </li>
+                  <li>
+                     Created a 100% remote learning environment, with video
+                     conferencing, screen sharing, and pair programming sessions
+                  </li>
+               </ul>
+            </article>
+            <article>
+               <div>
+                  <span>
+                     <div>
+                        Customer Success Engineer
+                        <div>LISNR</div>
+                     </div>
+                  </span>
+                  <span>
+                     <div>July 2019-January 2020</div>
+                     Cincinnati, OH (hybrid)
+                  </span>
+               </div>
+               <p>
+                  Built and maintained relationships with customers, providing technical support and training for an ultrasonic data-over-audio platform
+               </p>
+               <ul>
+                  <li>
+                     Prototyped apps that integrated an SDK with a grocery chain’s customer rewards API using xCode and Android Studio
+                  </li>
+                  <li>
+                     Partnered with a FinTech innovation lab to create an MVP for secure touchless payments using custom hardware
+                  </li>
+                  <li>
+                     Reduced a major European retailer's checkout time in half by streamlining their checkout authentication process
+                  </li>
+               </ul>
+            </article>
+            <article>
+               <div>
+                  <span>
+                     <div>
+                        CRM Architect
+                        <div>Health Carousel</div>
+                     </div>
+                  </span>
+                  <span>
+                     <div>February 2018-July 2019</div>
+                     Cincinnati, OH
+                  </span>
+               </div>
+               <p>
+                  Designed and implemented a CRM platform for a healthcare staffing
+                  company using Microsoft Dynamics, C#, and MSSQL Server
+               </p>
+               <ul>
+                  <li>
+                     Improved client registration process resulting in a 30% reduction in processing time by optimizing UX and APIs
+                  </li>
+                  <li>
+                     Architected a continuous integration pipeline in Azure DevOps, decreasing deploy time by 75% and eliminating build errors
+                  </li>
+                  <li>
+                     Created an Application Insights dashboard to provide real-time monitoring of system performance and user activity
+                  </li>
+               </ul>
+            </article>
+            <article>
+               <div>
+                  <span>
+                     <div>
+                        Development Team Lead
+                        <div>Cincinnati Public Library</div>
+                     </div>
+                  </span>
+                  <span>
+                     <div>February 2016-February 2018</div>
+                     Cincinnati, OH
+                  </span>
+               </div>
+            </article>
+            <article>
+               <div>
+                  <span>
+                     <div>
+                        Senior Software Developer
+                        <div>KnowledgeWorks</div>
+                     </div>
+                  </span>
+                  <span>
+                     <div>March 2012-January 2016</div>
+                     Cincinnati, OH
+                  </span>
+               </div>
+            </article>
+         </section>
+         <section>
+            <h2>Education and Certifications</h2>
+            <ul>
+               <li>
+                  <div>B.Sc. Information Systems,</div>
+                  Northern Kentucky University
+               </li>
+               <li>
+                  <div>B.A. Business Administration,</div>
+                  Northern Kentucky University
+               </li>
+               <li>
+                  <div>AWS,</div>
+                  Certified Cloud Practitioner
+               </li>
+               <li>
+                  <div>Hashicorp,</div>
+                  Certified Terraform Associate
+               </li>
+               <li>
+                  <div>Microsoft Training,</div>
+                  Azure Fundamentals
+               </li>
+            </ul>
+         </section>
+         <section>
+            <h2>Additional Skills and Experience</h2>
+            <ul>
+               <li>
+                  Volunteer Tutor Cincinnati and Northern Kentucky Public schools
+               </li>
+               <li>Instructor Amazon Technical Training</li>
+               <li>Volunteer Women, Wine &amp; Web Design</li>
+               <li>Microsoft Build &amp; Momentum Conferences</li>
+            </ul>
+         </section>
+      </main>
+   </body>
+   <script>
+      const toggleSwitch = document.querySelector(
+        '.theme-switch input[type="checkbox"]'
+      );
+      const currentTheme = localStorage.getItem("theme");
+      
+      if (currentTheme) {
+        document.documentElement.setAttribute("class", currentTheme);
+      
+        if (currentTheme === "dark") {
+          toggleSwitch.checked = true;
+        }
+      }
+      
+      function switchTheme(e) {
+        if (e.target.checked) {
+          document.documentElement.setAttribute("class", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.setAttribute("class", "light");
+          localStorage.setItem("theme", "light");
+        }
+      }
+      
+      toggleSwitch.addEventListener("change", switchTheme, false);
+   </script>
 </html>
