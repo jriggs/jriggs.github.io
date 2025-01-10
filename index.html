@@ -1,18 +1,18 @@
 <!DOCTYPE html>
-<html lang="en">
-   <head>
-      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-      <title>Joe Riggs</title>
-      <link rel="icon" type="image/x-icon" href="favicon.ico">
-      <style>
-         * {
+<html lang="en" class="light">
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Joe Riggs</title>
+   <link rel="icon" type="image/x-icon" href="https://joeriggs.com/favicon.ico">
+   <style>
+      * {
          margin: 0;
          padding: 0;
          box-sizing: border-box;
-         }
-         body {
-         font-family: "Calibri", "Segoe UI", "SegoeUI", "Helvetica Neue",
-         Helvetica, Arial, sans-serif;
+      }
+      body {
+         font-family: "Calibri", "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
          font-size: 1em;
          line-height: 1.2;
          -webkit-font-smoothing: antialiased;
@@ -20,81 +20,78 @@
          max-width: 51em;
          margin: auto;
          padding: 1em;
-         }
-         .dark {
+      }
+      .dark {
          background-color: #252222;
          color: #fefefe;
-         }
-         main {
+      }
+      main {
          margin-top: 1em;
-         }
-         section {
+      }
+      section {
          margin-bottom: 1.4em;
-         }
-         article {
+      }
+      article {
          margin-bottom: 1.4em;
-         }
-         header > section,
-         article > div {
+      }
+      header > section,
+      article > div {
          display: flex;
          justify-content: space-between;
          align-items: center;
          margin-bottom: 0.2em;
-         }
-         header > section > span > div {
+      }
+      header > section > div > div {
          text-align: end;
-         }
-         header > p{
+      }
+      section:nth-child(1) > ul > li > div {
+         display: inline-block;
+      }
+      
+      header > p {
          margin-top: 1em;
-         }
-         h1 {
+      }
+      h1 {
          font-size: 3rem;
-         }
-         h2 {
+      }
+      h2 {
          width: 100%;
          color: #1155cc;
          border-bottom: 0.1em solid #1155cc;
          margin-bottom: 0.4em;
-         }
-         ul {
+      }
+      ul {
          padding-left: 2em;
-         }
-         li > span {
-         display: inline-block;
+      }
+      li > div {
+         display: inline;
          width: 7rem;
          font-weight: 700;
-         }
-         div > span:nth-child(2) {
-         align-self: flex-start;
-         text-align: end;
-         }
-         div > span > div {
+      }
+      article > div > span,
+      h4 {
          font-weight: 700;
-         }
-         div > span > div > div {
+      }
+      article > div > div {
          font-weight: 400;
          font-style: italic;
-         }
-         li > div {
-         display: inline;
-         font-weight: 700;
-         }
-         .switch {
+      }
+      .switch {
          height: 100px;
          position: fixed;
          right: 15px;
          top: 21px;
-         }
-         .theme-switch {
+      }
+      .theme-switch {
          display: inline-block;
          height: 34px;
          position: relative;
          width: 60px;
-         }
-         .theme-switch input {
+      }
+      .theme-switch input {
          display: none;
-         }
-         .slider {
+      }
+      .slider {
          background-color: #ccc;
          bottom: 0;
          cursor: pointer;
@@ -103,8 +100,8 @@
          right: 0;
          top: 0;
          transition: 0.4s;
-         }
-         .slider:before {
+      }
+      .slider:before {
          background-color: #fff;
          bottom: 4px;
          content: "";
@@ -113,272 +110,237 @@
          position: absolute;
          transition: 0.4s;
          width: 26px;
-         }
-         input:checked + .slider {
+      }
+      input:checked + .slider {
          background-color: #2b2b2b;
-         }
-         input:checked + .slider:before {
+      }
+      input:checked + .slider:before {
          transform: translateX(26px);
-         }
-         .slider.round {
+      }
+      .slider.round {
          border-radius: 34px;
-         }
-         .slider.round:before {
+      }
+      .slider.round:before {
          border-radius: 50%;
-         }
-      </style>
-   </head>
-   <body>
-      <header>
-         <section>
-            <span>
-               <h1>Joe Riggs</h1>
-            </span>
-            <span>
-               <div class="switch">
-                  <label class="theme-switch" for="checkbox">
-                     <input type="checkbox" id="checkbox"/>
-                     <div class="slider round"></div>
-                  </label>
-               </div>
-            </span>
-            <span>
-               <div>Cincinnati, OH</div>
-               <div>linkedin.com/in/joeriggs</div>
-               <div>joseph.a.riggs@gmail.com</div>
-            </span>
-         </section>
-         <p>
-            Full-stack software engineer bringing 15 years of experience and a passion for building efficient, scalable systems.
-         </p>
-      </header>
-      <main>
-         <section>
-            <h2>Skills</h2>
+      }
+   </style>
+</head>
+<body>
+   <header>
+      <section>
+         <div>
+            <h1>Joe Riggs</h1>
+         </div>
+         <div>
+            <div class="switch">
+               <label class="theme-switch" for="checkbox">
+                  <input type="checkbox" id="checkbox">
+                  <span class="slider round"></span>
+               </label>
+            </div>
+         </div>
+         <div>
+            <div>Cincinnati, OH</div>
+            <div>linkedin.com/in/joeriggs</div>
+            <div>joseph.a.riggs@gmail.com</div>
+         </div>
+      </section>
+      <p>
+         Full-stack software engineer bringing 15 years of experience and a passion for building efficient, scalable systems.
+      </p>
+   </header>
+   <main>
+      <section>
+         <h2>Skills</h2>
+         <ul>
+            <li>
+               <div>Languages:</div>C#, Java, javascript/typescript, python, HTML &amp; CSS
+            </li>
+            <li>
+               <div>Technologies:</div>AWS, Azure, Terraform, Docker, MSSQL Server, Cosmos DB, REST APIs
+            </li>
+         </ul>
+      </section>
+      <section>
+         <h2>Work Experience</h2>
+         <article>
+            <div>
+               <h4>Senior Software Engineer</h4>
+               <span>January 2022-Present</span>
+            </div>
+            <div>
+               <div>Renewable Energy Systems</div>
+               London, UK (Remote)
+            </div>
+            <p>
+               Developed cloud-native applications for monitoring and reporting on timeseries data with C#, python and React
+            </p>
             <ul>
                <li>
-                  <span>Languages:</span>C#, Java, javascript/typescript, python, HTML &amp; CSS
+                  Spearheaded migration of 1TB document database to Azure Blob Storage, implementing tiered storage patterns and automated backup solutions, resulting in 95% cost reduction ($150K annually) while improving data durability to 99.999%
                </li>
                <li>
-                  <span>Technologies:</span>AWS, Azure, Terraform, Docker, MSSQL Server, Cosmos DB, REST APIs
+                  Engineered CI/CD pipeline using Github Actions, Terraform, and Azure DevOps, implementing automated testing with 90% coverage requirement, reducing deployment time from 4 hours to 10 minutes and enabling 3x more frequent releases
+               </li>
+               <li>
+                  Designed and implemented scalable time series data architecture, reducing query latency 90% (15s to 1.5s) while handling 10x data volume growth
+               </li>
+               <li>
+                  Created comprehensive documentation using Github Pages, sphinx, mermaid and mkdocs, increasing team productivity and halving onboarding time
                </li>
             </ul>
-         </section>
-         <section>
-            <h2>Work Experience</h2>
-            <article>
-               <div>
-                  <span>
-                     <div>
-                        Senior Software Engineer
-                        <div>Renewable Energy Systems</div>
-                     </div>
-                  </span>
-                  <span>
-                     <div>January 2022-Present</div>
-                     London, UK (Remote)
-                  </span>
-               </div>
-               <p>
-                  Developed cloud-native applications for monitoring and reporting on timeseries data with C#, python and React
-               </p>
-               <ul>
-                  <li>
-                     Spearheaded migration of 1TB document database to Azure Blob Storage, implementing tiered storage patterns and automated backup solutions, resulting in 95% cost reduction ($150K annually) while improving data durability to 99.999%
-                  </li>
-                  <li>
-                     Engineered CI/CD pipeline using Github Actions, Terraform, and Azure DevOps, implementing automated testing with 90% coverage requirement, reducing deployment time from 4 hours to 10 minutes and enabling 3x more frequent releases
-                  </li>
-                  <li>
-                     Designed and implemented scalable time series data architecture, reducing query latency 90% (15s to 1.5s) while handling 10x data volume growth
-                  </li>
-                  <li>
-                     Created comprehensive documentation using Github Pages, sphinx, mermaid and mkdocs, increasing team productivity and halving onboarding time
-                  </li>
-               </ul>
-            </article>
-            <article>
-               <div>
-                  <span>
-                     <div>
-                        Software Instructor
-                        <div>Tech Elevator</div>
-                     </div>
-                  </span>
-                  <span>
-                     <div>January 2020-December 2022</div>
-                     Cincinnati, OH (hybrid)
-                  </span>
-               </div>
-               <p>
-                  Delivered personalized in-person and remote instruction of
-                  full-stack software development for Java, C#.NET, MSSQL Server, REST
-                  API's, HTML/CSS and Vue.js
-               </p>
-               <ul>
-                  <li>
-                     Mentored 150+ students, placing 94% in software
-                     development roles within 6 months of graduation
-                  </li>
-                  <li>
-                     Developed and delivered curriculum, including 500+ hours of
-                     instruction, 100+ hours of project work, and 50 hours of career
-                     development
-                  </li>
-                  <li>
-                     Created a 100% remote learning environment, with video
-                     conferencing, screen sharing, and pair programming sessions
-                  </li>
-               </ul>
-            </article>
-            <article>
-               <div>
-                  <span>
-                     <div>
-                        Customer Success Engineer
-                        <div>LISNR</div>
-                     </div>
-                  </span>
-                  <span>
-                     <div>July 2019-January 2020</div>
-                     Cincinnati, OH (hybrid)
-                  </span>
-               </div>
-               <p>
-                  Built and maintained relationships with customers, providing technical support and training for an ultrasonic data-over-audio platform
-               </p>
-               <ul>
-                  <li>
-                     Prototyped apps that integrated an SDK with a grocery chain’s customer rewards API using xCode and Android Studio
-                  </li>
-                  <li>
-                     Partnered with a FinTech innovation lab to create an MVP for secure touchless payments using custom hardware
-                  </li>
-                  <li>
-                     Reduced a major European retailer's checkout time in half by streamlining their checkout authentication process
-                  </li>
-               </ul>
-            </article>
-            <article>
-               <div>
-                  <span>
-                     <div>
-                        CRM Architect
-                        <div>Health Carousel</div>
-                     </div>
-                  </span>
-                  <span>
-                     <div>February 2018-July 2019</div>
-                     Cincinnati, OH
-                  </span>
-               </div>
-               <p>
-                  Designed and implemented a CRM platform for a healthcare staffing
-                  company using Microsoft Dynamics, C#, and MSSQL Server
-               </p>
-               <ul>
-                  <li>
-                     Improved client registration process resulting in a 30% reduction in processing time by optimizing UX and APIs
-                  </li>
-                  <li>
-                     Architected a continuous integration pipeline in Azure DevOps, decreasing deploy time by 75% and eliminating build errors
-                  </li>
-                  <li>
-                     Created an Application Insights dashboard to provide real-time monitoring of system performance and user activity
-                  </li>
-               </ul>
-            </article>
-            <article>
-               <div>
-                  <span>
-                     <div>
-                        Development Team Lead
-                        <div>Cincinnati Public Library</div>
-                     </div>
-                  </span>
-                  <span>
-                     <div>February 2016-February 2018</div>
-                     Cincinnati, OH
-                  </span>
-               </div>
-            </article>
-            <article>
-               <div>
-                  <span>
-                     <div>
-                        Senior Software Developer
-                        <div>KnowledgeWorks</div>
-                     </div>
-                  </span>
-                  <span>
-                     <div>March 2012-January 2016</div>
-                     Cincinnati, OH
-                  </span>
-               </div>
-            </article>
-         </section>
-         <section>
-            <h2>Education and Certifications</h2>
+         </article>
+         <article>
+            <div>
+               <h4>Software Instructor</h4>
+               <span>January 2020-December 2022</span>
+            </div>
+            <div>
+               <div>Tech Elevator</div>
+               Cincinnati, OH (hybrid)
+            </div>
+            <p>
+               Delivered personalized in-person and remote instruction of full-stack software development for Java, C#.NET, MSSQL Server, REST API's, HTML/CSS and Vue.js
+            </p>
             <ul>
                <li>
-                  <div>B.Sc. Information Systems,</div>
-                  Northern Kentucky University
+                  Mentored 150+ students, placing 94% in software development roles within 6 months of graduation
                </li>
                <li>
-                  <div>B.A. Business Administration,</div>
-                  Northern Kentucky University
+                  Developed and delivered curriculum, including 500+ hours of instruction, 100+ hours of project work, and 50 hours of career development
                </li>
                <li>
-                  <div>AWS,</div>
-                  Certified Cloud Practitioner
-               </li>
-               <li>
-                  <div>Hashicorp,</div>
-                  Certified Terraform Associate
-               </li>
-               <li>
-                  <div>Microsoft Training,</div>
-                  Azure Fundamentals
+                  Created a 100% remote learning environment, with video conferencing, screen sharing, and pair programming sessions
                </li>
             </ul>
-         </section>
-         <section>
-            <h2>Additional Skills and Experience</h2>
+         </article>
+         <article>
+            <div>
+               <h4>Customer Success Engineer</h4>
+               <span>July 2019-January 2020</span>
+            </div>
+            <div>
+               <div>LISNR</div>
+               Cincinnati, OH (hybrid)
+            </div>
+            <p>
+               Built and maintained relationships with customers, providing technical support and training for an ultrasonic data-over-audio platform
+            </p>
             <ul>
                <li>
-                  Volunteer Tutor Cincinnati and Northern Kentucky Public schools
+                  Prototyped apps that integrated an SDK with a grocery chain's customer rewards API using xCode and Android Studio
                </li>
-               <li>Instructor Amazon Technical Training</li>
-               <li>Volunteer Women, Wine &amp; Web Design</li>
-               <li>Microsoft Build &amp; Momentum Conferences</li>
+               <li>
+                  Partnered with a FinTech innovation lab to create an MVP for secure touchless payments using custom hardware
+               </li>
+               <li>
+                  Reduced a major European retailer's checkout time in half by streamlining their checkout authentication process
+               </li>
             </ul>
-         </section>
-      </main>
-   </body>
+         </article>
+         <article>
+            <div>
+               <h4>CRM Architect</h4>
+               <span>February 2018-July 2019</span>
+            </div>
+            <div>
+               <div>Health Carousel</div>
+               Cincinnati, OH
+            </div>
+            <p>
+               Designed and implemented a CRM platform for a healthcare staffing company using Microsoft Dynamics, C#, and MSSQL Server
+            </p>
+            <ul>
+               <li>
+                  Improved client registration process resulting in a 30% reduction in processing time by optimizing UX and APIs
+               </li>
+               <li>
+                  Architected a continuous integration pipeline in Azure DevOps, decreasing deploy time by 75% and eliminating build errors
+               </li>
+               <li>
+                  Created an Application Insights dashboard to provide real-time monitoring of system performance and user activity
+               </li>
+            </ul>
+         </article>
+         <article>
+            <div>
+               <h4>Development Team Lead</h4>
+               <span>February 2016-February 2018</span>
+            </div>
+            <div>
+               <div>Cincinnati Public Library</div>
+               Cincinnati, OH
+            </div>
+         </article>
+         <article>
+            <div>
+               <h4>Senior Software Developer</h4>
+               <span>March 2012-January 2016</span>
+            </div>
+            <div>
+               <div>KnowledgeWorks</div>
+               Cincinnati, OH
+            </div>
+         </article>
+      </section>
+      <section>
+         <h2>Education and Certifications</h2>
+         <ul>
+            <li>
+               <div>B.Sc. Information Systems,</div>
+               Northern Kentucky University
+            </li>
+            <li>
+               <div>B.A. Business Administration,</div>
+               Northern Kentucky University
+            </li>
+            <li>
+               <div>AWS,</div>
+               Certified Cloud Practitioner
+            </li>
+            <li>
+               <div>Hashicorp,</div>
+               Certified Terraform Associate
+            </li>
+            <li>
+               <div>Microsoft Training,</div>
+               Azure Fundamentals
+            </li>
+         </ul>
+      </section>
+      <section>
+         <h2>Additional Skills and Experience</h2>
+         <ul>
+            <li>Volunteer Tutor Cincinnati and Northern Kentucky Public schools</li>
+            <li>Instructor Amazon Technical Training</li>
+            <li>Volunteer Women, Wine &amp; Web Design</li>
+            <li>Microsoft Build &amp; Momentum Conferences</li>
+         </ul>
+      </section>
+   </main>
    <script>
-      const toggleSwitch = document.querySelector(
-        '.theme-switch input[type="checkbox"]'
-      );
+      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
       const currentTheme = localStorage.getItem("theme");
-      
+
       if (currentTheme) {
-        document.documentElement.setAttribute("class", currentTheme);
-      
-        if (currentTheme === "dark") {
-          toggleSwitch.checked = true;
-        }
+         document.documentElement.setAttribute("class", currentTheme);
+
+         if (currentTheme === "dark") {
+            toggleSwitch.checked = true;
+         }
       }
-      
+
       function switchTheme(e) {
-        if (e.target.checked) {
-          document.documentElement.setAttribute("class", "dark");
-          localStorage.setItem("theme", "dark");
-        } else {
-          document.documentElement.setAttribute("class", "light");
-          localStorage.setItem("theme", "light");
-        }
+         if (e.target.checked) {
+            document.documentElement.setAttribute("class", "dark");
+            localStorage.setItem("theme", "dark");
+         } else {
+            document.documentElement.setAttribute("class", "light");
+            localStorage.setItem("theme", "light");
+         }
       }
-      
+
       toggleSwitch.addEventListener("change", switchTheme, false);
    </script>
+</body>
 </html>
