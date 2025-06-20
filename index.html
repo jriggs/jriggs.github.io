@@ -80,7 +80,7 @@
          height: 100px;
          position: fixed;
          right: 15px;
-         top: 21px;
+         bottom: -30px;
       }
       .theme-switch {
          display: inline-block;
@@ -146,47 +146,56 @@
          </div>
       </section>
       <p>
-         Software engineer bringing 15 years of experience and a passion for building efficient, scalable systems.
+         Software Engineer | Cloud Architecture & Performance Optimization
       </p>
    </header>
    <main>
       <section>
-         <h2>Skills</h2>
+         <h2>Professional Summary</h2>
+         <p>
+            Cloud-focused software engineer with 15 years designing scalable systems across energy, fintech, and healthcare. Delivered $2M+ in cost savings by modernizing infrastructure, optimizing data pipelines, and leading cloud migrations. Specializes in CI/CD automation, high-volume data ingestion, and real-time analytics at scale.
+         </p>
+      </section>
+      <section>
+
+         <h2>Technical Skills</h2>
          <ul>
             <li>
-               <div>Languages:</div>C#, Java, javascript/typescript, python, HTML &amp; CSS
+               <div>Languages: </div>C#, Java, Python, JavaScript/TypeScript, SQL
             </li>
             <li>
-               <div>Technologies:</div>AWS, Azure, Terraform, Docker, MSSQL Server, Cosmos DB, REST APIs
+               <div>Cloud & Infrastructure: </div>AWS, Azure, Docker, Kubernetes, Terraform, Serverless
             </li>
+            <li>
+               <div>Data & Analytics: </div>Time-series databases, ETL pipelines, MSSQL Server, Cosmos DB
+            </li>
+            <li>
+               <div>DevOps & Tools: </div>GitHub Actions, Infrastructure as Code, Microservices, REST APIs, Observability, API Integrations
          </ul>
       </section>
       <section>
-         <h2>Work Experience</h2>
+         <h2>Professional Experience</h2>
          <article>
             <div>
                <h4>Senior Software Engineer</h4>
-               <span>January 2022-July 2025</span>
+               <span>January 2022-June 2025</span>
             </div>
             <div>
                <div>Renewable Energy Systems</div>
                London, UK (Remote)
             </div>
-            <p>
-               Developed cloud-native applications for monitoring and reporting on timeseries data with C#, python and React
-            </p>
             <ul>
                <li>
-                  Led complete migration of 1TB document database to Azure Blob Storage with tiered storage architecture and automated backups. Achieved 95% cost reduction ($150K annual savings) while improving data durability to 99.999%
+                  Saved $150K annually by migrating a 1TB Cosmos DB to Azure Blob with lifecycle rules and tiered archiving (cold storage + access patterns analysis)
                </li>
                <li>
-                  Architected end-to-end CI/CD pipelines using GitHub Actions, Terraform, Azure and automated test coverage. Accelerated deployment cycles from 4 hours to 10 minutes, enabling 3x release frequency
+                  Architected end-to-end CI/CD pipelines using GitHub Actions, Terraform, Azure and automated test coverage. Enabling repeateble build processes and 3x release frequency
                </li>
                <li>
-                  Designed high-performance time series data architecture that reduced query response times by 90% (from 15s to 1.5s) while scaling to handle 10x data volume growth
+                  Built real-time ingestion platform for 50M+ daily IoT sensor readings using Azure Functions, Event Hubs, and time-series indexing, reduced query latency by 90% (15s → 1.5s)
                </li>
                <li>
-                  Built ETL pipelines processing 50M+ daily sensor readings with automated validation algorithms that corrected 15% of corrupt data, preventing $2M in false maintenance alerts
+                  Developed ML-assisted ETL validation layer in Python to detect anomalies and auto-correct data, preventing $2M in false-positive maintenance tickets
                </li>
             </ul>
          </article>
@@ -199,18 +208,12 @@
                <div>Tech Elevator</div>
                Cincinnati, OH (hybrid)
             </div>
-            <p>
-               Delivered personalized in-person and remote instruction of full-stack software development for Java, C#.NET, MSSQL Server, REST API's, HTML/CSS and Vue.js
-            </p>
             <ul>
                <li>
-                  Mentored 150+ students, placing 94% in software development roles within 6 months of graduation
+                  Mentored 150+ students across 8 cohorts, achieving 94% job placement — taught full-stack development with Java, SQL, HTML/CSS, and RESTful API design
                </li>
                <li>
-                  Developed and delivered curriculum, including 500+ hours of instruction, 100+ hours of project work, and 50 hours of career development
-               </li>
-               <li>
-                  Created a 100% remote learning environment, with video conferencing, screen sharing, and pair programming sessions
+                  Led remote learning transformation during COVID, deploying virtual pairing tools and live-code walkthroughs to sustain 100% engagement and participation
                </li>
             </ul>
          </article>
@@ -223,42 +226,30 @@
                <div>LISNR</div>
                Cincinnati, OH (hybrid)
             </div>
-            <p>
-               Built and maintained relationships with customers, providing technical support and training for an ultrasonic data-over-audio platform
-            </p>
             <ul>
                <li>
-                  Prototyped apps that integrated an SDK with a grocery chain's customer rewards API using xCode and Android Studio
+                  Cut checkout times by 50% for a national retailer by integrating LISNR’s ultrasonic SDK into mobile payment workflows (Java/Kotlin + iOS/Android testing)
                </li>
                <li>
                   Partnered with a FinTech innovation lab to create an MVP for secure touchless payments using custom hardware
-               </li>
-               <li>
-                  Reduced a major European retailer's checkout time in half by streamlining their checkout authentication process
                </li>
             </ul>
          </article>
          <article>
             <div>
-               <h4>CRM Architect</h4>
+               <h4>CRM Platform Architect</h4>
                <span>February 2018-July 2019</span>
             </div>
             <div>
                <div>Health Carousel</div>
                Cincinnati, OH
             </div>
-            <p>
-               Designed and implemented a CRM platform for a healthcare staffing company using Microsoft Dynamics, C#, and MSSQL Server
-            </p>
             <ul>
                <li>
-                  Improved client registration process resulting in a 30% reduction in processing time by optimizing UX and APIs
+                  Streamlined healthcare staffing ops by redesigning workflows in Microsoft Dynamics 365 and extending it with C# plug-ins, reducing processing time by 30%
                </li>
                <li>
-                  Architected a continuous integration pipeline in Azure DevOps, decreasing deploy time by 75% and eliminating build errors
-               </li>
-               <li>
-                  Created an Application Insights dashboard to provide real-time monitoring of system performance and user activity
+                  Automated builds and releases via Azure DevOps pipelines, eliminating manual deployment issues and enabling weekly feature releases
                </li>
             </ul>
          </article>
@@ -271,6 +262,14 @@
                <div>Cincinnati Public Library</div>
                Cincinnati, OH
             </div>
+            <ul>
+               <li>
+                  Modernized public-facing library catalog by refactoring legacy systems and deploying on high-availability infrastructure — increased uptime from 95% to 99.8%
+               </li>
+               <li>
+                  Introduced Scrum practices and CI tooling to a 4-person team, accelerating delivery speed by 40% across new feature requests
+               </li>
+            </ul>
          </article>
          <article>
             <div>
@@ -281,13 +280,21 @@
                <div>KnowledgeWorks</div>
                Cincinnati, OH
             </div>
+            <ul>
+               <li>
+                  Built learning management platform serving 200+ schools and 50,000+ students — enabled district-wide personalization strategies using performance dashboards
+               </li>
+               <li>
+                  Reduced query times and load bottlenecks by refactoring stored procedures and optimizing indexes, achieving 70% DB performance gain with no added cost
+               </li>
+            </ul>
          </article>
       </section>
       <section>
          <h2>Education and Certifications</h2>
          <ul>
             <li>
-               <div>B.Sc. Information Systems,</div>
+               <div>B.S. Information Systems,</div>
                Northern Kentucky University
             </li>
             <li>
@@ -295,26 +302,29 @@
                Northern Kentucky University
             </li>
             <li>
-               <div>AWS,</div>
-               Certified Cloud Practitioner
+               <div>Databricks,</div> 
+               DevOps Essentials for Data Engineering Course (2025)
+            </li>
+            <div>Hashicorp,</div> 
+               Certified Terraform Associate (2024)
             </li>
             <li>
-               <div>Hashicorp,</div>
-               Certified Terraform Associate
+               <div>AWS,</div> 
+               Certified Cloud Practitioner (2022)
             </li>
             <li>
-               <div>Microsoft Training,</div>
+               <div>Microsoft Training,</div> 
                Azure Fundamentals
             </li>
          </ul>
       </section>
       <section>
-         <h2>Additional Skills and Experience</h2>
+         <h2>LEADERSHIP &amp; IMPACT</h2>
          <ul>
-            <li>Volunteer Tutor Cincinnati and Northern Kentucky Public schools</li>
-            <li>Instructor Amazon Technical Training</li>
-            <li>Volunteer Women, Wine &amp; Web Design</li>
-            <li>Microsoft Build &amp; Momentum Conferences</li>
+            <li>Conference Instructor, Delivered enterprise cloud workshops as an Amazon Technical Training Instructor (2019–2021)</li>
+            <li>STEM Mentor, Supports local student programs in Cincinnati and Northern Kentucky with hands-on dev mentorship</li>
+            <li>Volunteer, Women, Wine &amp; Web Design</li>
+            <li>Strategic Career Progression: Took targeted roles across education, civic, and energy sectors to deepen cloud, infrastructure, and leadership expertise</li>
          </ul>
       </section>
    </main>
