@@ -14,10 +14,10 @@
       body {
          font-family: "Calibri", "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
          font-size: 1em;
-         line-height: 1.2;
+         line-height: 1.23;
          -webkit-font-smoothing: antialiased;
          text-rendering: optimizeLegibility;
-         max-width: 51em;
+         max-width: 47em;
          margin: auto;
          padding: 1em;
       }
@@ -47,10 +47,6 @@
       section:nth-child(1) > ul > li > div {
          display: inline-block;
       }
-      
-      header > p {
-         margin-top: 1em;
-      }
       h1 {
          font-size: 3rem;
       }
@@ -67,6 +63,9 @@
          display: inline;
          width: 7rem;
          font-weight: 700;
+      }
+      article ul li {
+         margin-bottom: 0.4em;
       }
       article > div > span,
       h4 {
@@ -161,16 +160,18 @@
                <div>Cloud Platforms: </div>AWS, Azure, Github
             </li>
             <li>
-               <div>Infrastructure: </div>Docker, Kubernetes, Terraform, Microservices & Serverless
+               <div>Infrastructure: </div>Docker, Kubernetes, Terraform, Microservices
             </li>
             <li>
                <div>Programming: </div>Java, C#, Python, JavaScript, React, Vue.js, TypeScript, HTML/CSS, SASS
             </li>
             <li>
-               <div>Data &amp; Analytics: </div>SQL, Cosmos DB, Data Lakes, ETL Pipelines, SQL Server, Postgres
+               <div>Data &amp; Analytics: </div>SQL, Cosmos DB, Data Bricks, ETL Pipelines, SQL Server, Postgres
             </li>
             <li>
                <div>Tools: </div>Git, REST APIs, Observability, Headlamp, JIRA
+            </li>
+         </ul>
       </section>
       <section>
          <h2>Professional Experience</h2>
@@ -185,16 +186,19 @@
             </div>
             <ul>
                <li>
-                  Mentor team members through code reviews and technical development, leveraging expertise in Python, React, and MSSQL Server to elevate code quality and share best practices across the team.
+                  Shipped an end-to-end AI agent workflow that queries account data from multiple data sources, generates injection-safe HTML email drafts, and dispatches them via an internal service, collapsing a manual, multi-step past-due resolution process into a one-click action for sales reps
                </li>
                <li>
-                  Collaborate with stakeholders to understand project needs, translate requirements into technical specifications and architecture decisions, and evaluate tools and technologies including Azure that best fit each project.
+                  Engineered full-stack Python/FastAPI backend and React/TypeScript frontend with OAuth CRM integrations, security hardening, and optimistic-UI for AI-driven lead prioritization
                </li>
                <li>
-                  Present technical findings, progress updates, and architectural recommendations to both technical and non-technical audiences to ensure alignment and manage stakeholder expectations.
+                  Architected unified data access layer across Databricks, SQL Server, and PostgreSQL that fuses fragmented CRM and internal data into a single API powering BI dashboards and agent workflows
                </li>
                <li>
-                  Develop new features and maintain production code using Python, React, and MSSQL Server
+                  Authored an engineering standards and review playbook covering architecture, security, and cross-repo workflows, adopted team-wide and embedded into AI coding tools to accelerate onboarding and prevent schema and contract drift
+               </li>
+               <li>
+                  Implemented production observability (distributed tracing, cloud monitoring) and CI quality gates (linting, static analysis, coverage thresholds), cutting diagnosis time from ad-hoc log digging to trace-driven root-cause analysis and blocking regressions before release
                </li>
             </ul>
          </article>
@@ -351,9 +355,9 @@
       <section>
          <h2>Leadership &amp; Community Involvement</h2>
          <ul>
-            <li>Conference Instructor, Delivered enterprise cloud workshops as an Amazon Technical Training Instructor (2019–2021)</li>
-            <li>STEM Mentor, Supports local student programs in Cincinnati and Northern Kentucky with hands-on dev mentorship</li>
-            <li>Volunteer, Women, Wine &amp; Web Design</li>
+            <li>Instructor - Delivered enterprise cloud workshops as an Amazon Technical Training Instructor (2019–2021)</li>
+            <li>STEM Mentor - Supports local student programs in Cincinnati and Northern Kentucky with hands-on dev mentorship</li>
+            <li>Volunteer - Women, Wine &amp; Web Design</li>
          </ul>
       </section>
    </main>
