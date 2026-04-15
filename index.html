@@ -1,389 +1,439 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en" class="light">
-<head>
-   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Joe Riggs</title>
-   <link rel="icon" type="image/x-icon" href="https://joeriggs.com/favicon.ico">
-   <style>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joe Riggs</title>
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://joeriggs.com/favicon.ico"
+    />
+    <style>
       * {
-         margin: 0;
-         padding: 0;
-         box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
       }
       body {
-         font-family: "Calibri", "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial, sans-serif;
-         font-size: 1em;
-         line-height: 1.23;
-         -webkit-font-smoothing: antialiased;
-         text-rendering: optimizeLegibility;
-         max-width: 47em;
-         margin: auto;
-         padding: 1em;
+        font-family:
+          "Calibri", "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial,
+          sans-serif;
+        font-size: 1em;
+        line-height: 1.23;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+        max-width: 47em;
+        margin: auto;
+        padding: 1em;
       }
       .dark {
-         background-color: #252222;
-         color: #fefefe;
+        background-color: #252222;
+        color: #fefefe;
       }
       main {
-         margin-top: 1em;
+        margin-top: 1em;
       }
       section {
-         margin-bottom: 1.4em;
+        margin-bottom: 1.4em;
       }
       article {
-         margin-bottom: 1.4em;
+        margin-bottom: 1.4em;
       }
       header > section,
       article > div {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         margin-bottom: 0.2em;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-bottom: 0.2em;
       }
       header > section > div > div {
-         text-align: end;
+        text-align: end;
       }
       section:nth-child(1) > ul > li > div {
-         display: inline-block;
+        display: inline-block;
       }
       h1 {
-         font-size: 3rem;
+        font-size: 3rem;
       }
       h2 {
-         width: 100%;
-         color: #1155cc;
-         border-bottom: 0.1em solid #1155cc;
-         margin-bottom: 0.4em;
+        width: 100%;
+        color: #1155cc;
+        border-bottom: 0.1em solid #1155cc;
+        margin-bottom: 0.4em;
       }
       ul {
-         padding-left: 2em;
+        padding-left: 2em;
       }
       li > div {
-         display: inline;
-         width: 7rem;
-         font-weight: 700;
+        display: inline;
+        width: 7rem;
+        font-weight: 700;
       }
       article ul li {
-         margin-bottom: 0.4em;
+        margin-bottom: 0.4em;
       }
       article > div > span,
       h4 {
-         font-weight: 700;
+        font-weight: 700;
       }
       article > div > div {
-         font-weight: 400;
-         font-style: italic;
+        font-weight: 400;
+        font-style: italic;
       }
       .switch {
-         height: 100px;
-         position: fixed;
-         right: 15px;
-         bottom: -30px;
+        height: 100px;
+        position: fixed;
+        right: 15px;
+        bottom: -30px;
       }
       .theme-switch {
-         display: inline-block;
-         height: 34px;
-         position: relative;
-         width: 60px;
+        display: inline-block;
+        height: 34px;
+        position: relative;
+        width: 60px;
       }
       .theme-switch input {
-         display: none;
+        display: none;
       }
       .slider {
-         background-color: #ccc;
-         bottom: 0;
-         cursor: pointer;
-         left: 0;
-         position: absolute;
-         right: 0;
-         top: 0;
-         transition: 0.4s;
+        background-color: #ccc;
+        bottom: 0;
+        cursor: pointer;
+        left: 0;
+        position: absolute;
+        right: 0;
+        top: 0;
+        transition: 0.4s;
       }
       .slider:before {
-         background-color: #fff;
-         bottom: 4px;
-         content: "";
-         height: 26px;
-         left: 4px;
-         position: absolute;
-         transition: 0.4s;
-         width: 26px;
+        background-color: #fff;
+        bottom: 4px;
+        content: "";
+        height: 26px;
+        left: 4px;
+        position: absolute;
+        transition: 0.4s;
+        width: 26px;
       }
       input:checked + .slider {
-         background-color: #2b2b2b;
+        background-color: #2b2b2b;
       }
       input:checked + .slider:before {
-         transform: translateX(26px);
+        transform: translateX(26px);
       }
       .slider.round {
-         border-radius: 34px;
+        border-radius: 34px;
       }
       .slider.round:before {
-         border-radius: 50%;
+        border-radius: 50%;
       }
-   </style>
-</head>
-<body>
-   <header>
+    </style>
+  </head>
+  <body>
+    <header>
       <section>
-         <div>
-            <h1>Joe Riggs</h1>
-         </div>
-         <div>
-            <div class="switch">
-               <label class="theme-switch" for="checkbox">
-                  <input type="checkbox" id="checkbox">
-                  <span class="slider round"></span>
-               </label>
-            </div>
-         </div>
-         <div>
-            <div>Cincinnati, OH</div>
-            <div>linkedin.com/in/joeriggs</div>
-            <div>joseph.a.riggs@gmail.com</div>
-         </div>
+        <div>
+          <h1>Joe Riggs</h1>
+        </div>
+        <div>
+          <div class="switch">
+            <label class="theme-switch" for="checkbox">
+              <input type="checkbox" id="checkbox" />
+              <span class="slider round"></span>
+            </label>
+          </div>
+        </div>
+        <div>
+          <div>Cincinnati, OH</div>
+          <div>linkedin.com/in/joeriggs</div>
+          <div>joseph.a.riggs@gmail.com</div>
+        </div>
       </section>
-   </header>
-   <main>
+    </header>
+    <main>
       <section>
-         <h2>Summary</h2>
-         <p>
-          Full-stack engineer with 15 years of experience building scalable systems and leading technical initiatives. Delivered $2M in annual savings through devops automation, cloud migrations, and data pipeline optimization. Experienced in solving complex technical problems, designing user interfaces, and mentoring development teams. Seeking a collaborative role that combines platform architecture with hands-on development.
-         </p>
-      </section>
-      <section>
-
-         <h2>Technical Skills</h2>
-         <ul>
-            <li>
-               <div>Cloud Platforms: </div>AWS, Azure, Github
-            </li>
-            <li>
-               <div>Infrastructure: </div>Docker, Kubernetes, Terraform, Microservices
-            </li>
-            <li>
-               <div>Programming: </div>Java, C#, Python, JavaScript, React, Vue.js, TypeScript, HTML/CSS, SASS
-            </li>
-            <li>
-               <div>Data &amp; Analytics: </div>SQL, Cosmos DB, Data Bricks, ETL Pipelines, SQL Server, Postgres
-            </li>
-            <li>
-               <div>Tools: </div>Git, REST APIs, Observability, Headlamp, JIRA
-            </li>
-         </ul>
+        <h2>Summary</h2>
+        <p>
+          Senior Full-Stack Engineer and Platform Architect with 15+ years
+          designing and building scalable cloud and data systems. Led
+          development of distributed platforms processing 50M+ daily events,
+          AI-driven workflows, and cloud optimization initiatives delivering
+          $2M+ in annual savings. Combines hands-on engineering with system
+          design and cross-team technical leadership to drive product impact.
+          Experienced in owning end-to-end architecture, mentoring engineers,
+          and scaling systems across cloud-native environments.
+        </p>
       </section>
       <section>
-         <h2>Professional Experience</h2>
-         <article>
-            <div>
-               <h4>Senior Software Engineer</h4>
-               <span>August 2025 - Present</span>
-            </div>
-            <div>
-               <div>Constellation Energy (contract)</div>
-               Remote
-            </div>
-            <ul>
-               <li>
-                  Shipped an end-to-end AI agent workflow that queries account data from multiple data sources, generates injection-safe HTML email drafts, and dispatches them via an internal service, collapsing a manual, multi-step past-due resolution process into a one-click action for sales reps
-               </li>
-               <li>
-                  Engineered full-stack Python/FastAPI backend and React/TypeScript frontend with OAuth CRM integrations, security hardening, and optimistic-UI for AI-driven lead prioritization
-               </li>
-               <li>
-                  Architected unified data access layer across Databricks, SQL Server, and PostgreSQL that fuses fragmented CRM and internal data into a single API powering BI dashboards and agent workflows
-               </li>
-               <li>
-                  Authored an engineering standards and review playbook covering architecture, security, and cross-repo workflows, adopted team-wide and embedded into AI coding tools to accelerate onboarding and prevent schema and contract drift
-               </li>
-               <li>
-                  Implemented production observability (distributed tracing, cloud monitoring) and CI quality gates (linting, static analysis, coverage thresholds), cutting diagnosis time from ad-hoc log digging to trace-driven root-cause analysis and blocking regressions before release
-               </li>
-            </ul>
-         </article>
-         <article>
-            <div>
-               <h4>Senior Software Engineer</h4>
-               <span>January 2022-June 2025</span>
-            </div>
-            <div>
-               <div>Renewable Energy Systems</div>
-               London, UK (Remote)
-            </div>
-            <ul>
-               <li>
-                  Built time series ingestion platform processing 50M+ daily IoT sensor readings using C#, Azure Function Apps and Event Hubs
-               </li>
-               <li>
-                  Migrated 1TB Cosmos DB to Azure Blob Storage with tiered hierarchy and automated backup strategy, saving $150K annually
-               </li>
-               <li>
-                  Designed end-to-end CI/CD pipelines using GitHub Actions and Terraform with automated tests and coverage reports, tripling release frequency
-               </li>
-               <li>
-                 Engineered a modern, high-performance dashboard in React to visualize asset datasets, featuring dynamic filtering, responsive design, and seamless integration to multiple datastores
-               </li>
-            </ul>
-         </article>
-         <article>
-            <div>
-               <h4>Software Instructor</h4>
-               <span>January 2020-December 2022</span>
-            </div>
-            <div>
-               <div>Tech Elevator</div>
-               Cincinnati, OH (hybrid)
-            </div>
-            <ul>
-               <li>
-                  Taught Java, C#, SQL, HTML/CSS, REST APIs, and Vue.js in virtual and in-person formats
-               </li>
-               <li>
-                  Taught and applied agile SDLC and testing best practices in student capstone projects simulating startup and enterprise settings
-               </li>
-               <li>
-                  Coached over 150 students, developing their technical troubleshooting and communication skills to support job readiness, achieving a 94% placement rate
-               </li>
-            </ul>
-         </article>
-         <article>
-            <div>
-               <h4>Customer Success Engineer</h4>
-               <span>July 2019-January 2020</span>
-            </div>
-            <div>
-               <div>LISNR</div>
-               Cincinnati, OH (hybrid)
-            </div>
-            <ul>
-               <li>
-                 Reduced checkout times by 50% for a national retailer by integrating LISNR’s ultrasonic SDK into mobile payment workflows (Java/Kotlin + iOS/Android testing)
-               </li>
-               <li>
-                  Partnered with a FinTech innovation lab to create an MVP for secure touchless payments using Raspberry Pi, docker and python
-               </li>
-               <li>
-                  Provided hands-on technical support for pilot clients and participated in user testing for hardware-software integration
-               </li>
-            </ul>
-         </article>
-         <article>
-            <div>
-               <h4>Platform Architect</h4>
-               <span>February 2018-July 2019</span>
-            </div>
-            <div>
-               <div>Health Carousel</div>
-               Cincinnati, OH
-            </div>
-            <ul>
-               <li>
-                  Redesigned healthcare staffing workflows in Microsoft Dynamics 365 with C# and javascript plugins, reducing application processing time by 30%
-               </li>
-               <li>
-                  Automated builds and releases via Azure DevOps pipelines and YAML configurations, eliminating manual deployment issues and enabling weekly feature releases
-               </li>
-            </ul>
-         </article>
-         <article>
-            <div>
-               <h4>Senior Software Developer</h4>
-               <span>February 2016-February 2018</span>
-            </div>
-            <div>
-               <div>Cincinnati Public Library</div>
-               Cincinnati, OH
-            </div>
-            <ul>
-               <li>
-                  Modernized public-facing library catalog by refactoring legacy systems and deploying on high-availability infrastructure, increasing uptime from 95% to 99.8%
-               </li>
-               <li>
-                  Introduced Scrum practices and CI tooling to a 4-person team, accelerating delivery speed by 40% across new feature requests
-               </li>
-            </ul>
-         </article>
-         <article>
-            <div>
-               <h4>Senior Software Developer</h4>
-               <span>March 2012-January 2016</span>
-            </div>
-            <div>
-               <div>KnowledgeWorks</div>
-               Cincinnati, OH
-            </div>
-            <ul>
-               <li>
-                  Built learning management platform serving 200+ schools and 50,000+ students, enabling district-wide personalization strategies using performance dashboards
-               </li>
-               <li>
-                  Reduced query times and load bottlenecks by refactoring stored procedures and optimizing indexes, achieving 70% DB performance gain with no added cost
-               </li>
-            </ul>
-         </article>
+        <h2>Core Expertise</h2>
+        <ul>
+          <li>
+            <div>Platform &amp; Systems:</div>
+            Distributed Systems, API Design, Data Platforms, System Architecture
+          </li>
+          <li>
+            <div>Cloud &amp; Infrastructure:</div>
+            AWS, Azure, Kubernetes, Terraform, Docker
+          </li>
+          <li>
+            <div>Languages:</div>
+            C#, Java, Python, TypeScript, JavaScript
+          </li>
+          <li>
+            <div>Frontend:</div>
+            React, Vue.js, TypeScript
+          </li>
+          <li>
+            <div>Data:</div>
+            SQL, Cosmos DB, Databricks, ETL Pipelines, PostgreSQL, SQL Server
+          </li>
+          <li>
+            <div>Practices:</div>
+            CI/CD, Observability, Microservices, Agile Delivery
+          </li>
+        </ul>
       </section>
       <section>
-         <h2>Education and Certifications</h2>
-         <ul>
+        <h2>Professional Experience</h2>
+        <article>
+          <div>
+            <h4>Senior Software Engineer</h4>
+            <span>Aug 2025 – Present</span>
+          </div>
+          <div>
+            <div>Constellation Energy (Contract) — Remote</div>
+          </div>
+          <ul>
             <li>
-               <div>B.S. Information Systems,</div>
-               Northern Kentucky University
+              Built and deployed an AI-driven workflow system automating
+              past-due account resolution, reducing a multi-step manual process
+              to a single action for sales teams
             </li>
             <li>
-               <div>B.A. Business Administration,</div>
-               Northern Kentucky University
+              Designed and owned a unified data access layer integrating
+              Databricks, SQL Server, and PostgreSQL, enabling consistent APIs
+              for BI and AI-powered workflows across teams
             </li>
             <li>
-               <div>Databricks,</div> 
-               DevOps Essentials for Data Engineering (2025)
+              Developed full-stack platform (Python/FastAPI + React/TypeScript)
+              with secure OAuth integrations and injection-safe content
+              generation
             </li>
             <li>
-            <div>Hashicorp,</div> 
-               Certified Terraform Associate (2024)
+              Established engineering standards (architecture, security,
+              cross-repo workflows), improving onboarding speed and reducing
+              schema/contract drift
             </li>
             <li>
-               <div>AWS,</div> 
-               Certified Cloud Practitioner (2022)
+              Implemented distributed tracing and CI quality gates, reducing
+              debugging time from hours to minutes and preventing regressions
+              pre-release
+            </li>
+          </ul>
+        </article>
+        <article>
+          <div>
+            <h4>Senior Software Engineer</h4>
+            <span>Jan 2022 – Jun 2025</span>
+          </div>
+          <div>
+            <div>Renewable Energy Systems — Remote (London, UK)</div>
+          </div>
+          <ul>
+            <li>
+              Led development of a time-series ingestion platform processing
+              50M+ IoT events daily using Azure Functions and Event Hubs
             </li>
             <li>
-               <div>Microsoft Training,</div> 
-               Azure Fundamentals
+              Architected and executed migration of 1TB from Cosmos DB to Azure
+              Blob Storage with tiered storage strategy, reducing costs by $150K
+              annually
             </li>
-         </ul>
+            <li>
+              Designed and implemented CI/CD pipelines (GitHub Actions +
+              Terraform), tripling deployment frequency and improving release
+              reliability
+            </li>
+            <li>
+              Built high-performance React dashboard for large-scale asset data
+              visualization with dynamic filtering and multi-source integration
+            </li>
+          </ul>
+        </article>
+        <article>
+          <div>
+            <h4>Software Instructor</h4>
+            <span>Jan 2020 – Dec 2022</span>
+          </div>
+          <div>
+            <div>Tech Elevator — Cincinnati, OH (Hybrid)</div>
+          </div>
+          <ul>
+            <li>
+              Taught full-stack development (Java, C#, SQL, REST, Vue.js) to
+              150+ students with a 94% job placement rate
+            </li>
+            <li>
+              Mentored students on debugging, system design fundamentals, and
+              agile development practices
+            </li>
+            <li>
+              Simulated real-world engineering environments through team-based
+              capstone projects
+            </li>
+          </ul>
+        </article>
+        <article>
+          <div>
+            <h4>Customer Success Engineer</h4>
+            <span>Jul 2019 – Jan 2020</span>
+          </div>
+          <div>
+            <div>LISNR — Cincinnati, OH (Hybrid)</div>
+          </div>
+          <ul>
+            <li>
+              Integrated ultrasonic SDK into mobile payment systems, reducing
+              checkout times by 50% for a national retailer
+            </li>
+            <li>
+              Prototyped secure touchless payment system using Raspberry Pi,
+              Python, and Docker in partnership with FinTech innovation lab
+            </li>
+            <li>
+              Supported enterprise pilots and contributed to hardware/software
+              integration testing
+            </li>
+          </ul>
+        </article>
+        <article>
+          <div>
+            <h4>Platform Architect</h4>
+            <span>Feb 2018 – Jul 2019</span>
+          </div>
+          <div>
+            <div>Health Carousel — Cincinnati, OH</div>
+          </div>
+          <ul>
+            <li>
+              Owned architecture for healthcare staffing workflows in Microsoft
+              Dynamics 365, reducing processing time by 30%
+            </li>
+            <li>
+              Implemented CI/CD pipelines (Azure DevOps, YAML), enabling
+              consistent weekly releases and eliminating manual deployment
+              issues
+            </li>
+          </ul>
+        </article>
+        <article>
+          <div>
+            <h4>Senior Software Developer</h4>
+            <span>Feb 2016 – Feb 2018</span>
+          </div>
+          <div>
+            <div>Cincinnati Public Library — Cincinnati, OH</div>
+          </div>
+          <ul>
+            <li>
+              Modernized legacy catalog systems into high-availability
+              architecture, improving uptime from 95% to 99.8%
+            </li>
+            <li>
+              Introduced Scrum and CI practices, increasing team delivery speed
+              by 40%
+            </li>
+          </ul>
+        </article>
+        <article>
+          <div>
+            <h4>Senior Software Developer</h4>
+            <span>Mar 2012 – Jan 2016</span>
+          </div>
+          <div>
+            <div>KnowledgeWorks — Cincinnati, OH</div>
+          </div>
+          <ul>
+            <li>
+              Built learning platform serving 50,000+ students across 200+
+              schools, enabling data-driven personalization
+            </li>
+            <li>
+              Optimized database performance (indexing, query refactoring),
+              improving query times by 70% without added infrastructure cost
+            </li>
+          </ul>
+        </article>
       </section>
       <section>
-         <h2>Leadership &amp; Community Involvement</h2>
-         <ul>
-            <li>Instructor - Delivered enterprise cloud workshops as an Amazon Technical Training Instructor (2019–2021)</li>
-            <li>STEM Mentor - Supports local student programs in Cincinnati and Northern Kentucky with hands-on dev mentorship</li>
-            <li>Volunteer - Women, Wine &amp; Web Design</li>
-         </ul>
+        <h2>Education &amp; Certifications</h2>
+        <ul>
+          <li>
+            <div>B.S. Information Systems,</div>
+            Northern Kentucky University
+          </li>
+          <li>
+            <div>B.A. Business Administration,</div>
+            Northern Kentucky University
+          </li>
+          <li>
+            <div>Databricks –</div>
+            DevOps Essentials for Data Engineering (2025)
+          </li>
+          <li>
+            <div>HashiCorp –</div>
+            Certified Terraform Associate (2024)
+          </li>
+          <li>
+            <div>AWS</div>
+            Certified Cloud Practitioner (2022)
+          </li>
+          <li>
+            <div>Microsoft</div>
+            Azure Fundamentals
+          </li>
+        </ul>
       </section>
-   </main>
-   <script>
-      const toggleSwitch = document.querySelector('.theme-switch input[type="checkbox"]');
+      <section>
+        <h2>Leadership &amp; Community</h2>
+        <ul>
+          <li>
+            Technical Instructor – Delivered enterprise cloud training as an
+            Amazon Technical Training Instructor (2019–2021)
+          </li>
+          <li>
+            STEM Mentor – Mentor for student developers in Cincinnati/NKY region
+          </li>
+          <li>Volunteer – Women, Wine &amp; Web Design</li>
+        </ul>
+      </section>
+    </main>
+    <script>
+      const toggleSwitch = document.querySelector(
+        '.theme-switch input[type="checkbox"]',
+      );
       const currentTheme = localStorage.getItem("theme");
 
       if (currentTheme) {
-         document.documentElement.setAttribute("class", currentTheme);
+        document.documentElement.setAttribute("class", currentTheme);
 
-         if (currentTheme === "dark") {
-            toggleSwitch.checked = true;
-         }
+        if (currentTheme === "dark") {
+          toggleSwitch.checked = true;
+        }
       }
 
       function switchTheme(e) {
-         if (e.target.checked) {
-            document.documentElement.setAttribute("class", "dark");
-            localStorage.setItem("theme", "dark");
-         } else {
-            document.documentElement.setAttribute("class", "light");
-            localStorage.setItem("theme", "light");
-         }
+        if (e.target.checked) {
+          document.documentElement.setAttribute("class", "dark");
+          localStorage.setItem("theme", "dark");
+        } else {
+          document.documentElement.setAttribute("class", "light");
+          localStorage.setItem("theme", "light");
+        }
       }
 
       toggleSwitch.addEventListener("change", switchTheme, false);
-   </script>
-</body>
+    </script>
+  </body>
 </html>
