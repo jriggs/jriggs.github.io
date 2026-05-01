@@ -15,6 +15,11 @@
         padding: 0;
         box-sizing: border-box;
       }
+      a {
+        color: inherit;
+        text-decoration: none;
+        outline: none;
+      }
       body {
         font-family:
           "Calibri", "Segoe UI", "SegoeUI", "Helvetica Neue", Helvetica, Arial,
@@ -47,7 +52,7 @@
         align-items: center;
         margin-bottom: 0.2em;
       }
-      header > section > div > div {
+      header > section > div:last-child > div {
         text-align: end;
       }
       section:nth-child(1) > ul > li > div {
@@ -145,9 +150,9 @@
           </div>
         </div>
         <div>
-          <div>Cincinnati, OH</div>
-          <div>linkedin.com/in/joeriggs</div>
-          <div>joseph.a.riggs@gmail.com</div>
+          <div><a href="https://linkedin.com/in/joeriggs" target="_blank">linkedin.com/in/joeriggs</a></div>
+          <div><a href="https://github.com/jriggs" target="_blank">github.com/jriggs</a></div>
+          <div><a href="mailto:joseph.a.riggs@gmail.com">joseph.a.riggs@gmail.com</a></div>
         </div>
       </section>
     </header>
