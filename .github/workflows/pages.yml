@@ -29,7 +29,7 @@ jobs:
       - name: Build site with resume PDF
         run: |
           rsync -a --exclude='.*' --exclude='_site' ./ _site/
-          google-chrome --headless --no-sandbox --disable-gpu --no-pdf-header-footer \
+          google-chrome --headless --no-sandbox --disable-gpu --no-pdf-header-footer --log-level=3 \
             --print-to-pdf=_site/Joe-Riggs-Resume.pdf "file://$PWD/index.html"
           test -s _site/Joe-Riggs-Resume.pdf
 
